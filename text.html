@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <style>
+         p.text1 {
+            white-space: nowrap; 
+            width: 500px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+         }
+         p.text2 {
+            white-space: nowrap; 
+            width: 500px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+         p.text3 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: keep-all;
+         }
+         p.text4 {
+            width: 140px; 
+            border: 1px solid #000000;
+            word-break: break-all;
+         }
+      </style>
+   </head>
+
+   <body>
+   
+      <b>Original Text:</b>
+   
+      <p>
+         Tutorials Point originated from the idea that there exists a class of 
+         readers who respond better to online content and prefer to learn new 
+         skills at their own pace from the comforts of their drawing rooms.
+      </p>
+      
+      <b>Text overflow:clip:</b>
+   
+      <p class = "text1">
+        Si Memet ketindih kayu
+Love was made for me and you
+      </p>
+      
+      <b>Text overflow:ellipsis</b>
+   
+      <p class = "text2">
+        Satu tambah satu sama dengan dua
+Aku sama kamu, cinta sampai tua
+
+<b>line break at hyphens:</b>
+<p class = "text3">
+    Setiap kebebasan di ikuti oleh kosekuensi
+</p>
+
+<b>line break at any character</b>
+
+<p class = "text4">
+    A dream you dream alone is only dream, a dream you dream together is reality
+    -john lennon
+</p>
+      
+   </body>
+</html>

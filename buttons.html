@@ -1,0 +1,69 @@
+<html>
+<head>
+<style>
+   .arrow-button {
+      display: inline-block;
+      padding:
+ 15px;
+      background-color: violet;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+   }
+   .arrow-button::before {
+      content:"";
+      position: absolute;
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: pink;
+      transition: width 0.3s ease-in-out;
+   }
+   .arrow-button:hover::before {
+      width: 100%;
+   }
+   .arrow-icon::after {
+      content: '\2192'; 
+      margin-left: 10px;
+   }
+   .style-button {
+      display: inline-block;
+      padding: 15px;
+      background-color: pink;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.1s ease;
+   }
+   .style-button:hover {
+      background-color: violet;
+   }
+   .style-button:active {
+      transform: translateY(2px);
+      background-color: yellow;
+   }
+   .style-button {
+      display: inline-block;
+      padding: 15px;
+      background-color: violet;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+   }
+   .style-button:hover {
+      opacity: 0.5;
+   }
+</style>
+</head>
+<body>
+   <button class="arrow-button" href="#">Hover Me<span class="arrow-icon"></span></button>
+
+   <button class="style-button">Press Me</button>
+   <button class="style-button">Hover Me</button>
+</body>
+</html>

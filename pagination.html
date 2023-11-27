@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+   .simple-pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+   }
+   .simple-pagination a {
+      text-decoration: none;
+      padding: 8px 12px;
+      color: #333;
+      border-radius: 8px;
+   }
+   .simple-pagination a.active-link {
+      background-color: violet;
+      color: white;
+   }
+   .simple-pagination a:hover:not(.active-link) {
+      background-color: pink;
+   }
+   .simple-pagination2 {
+      display: flex;
+      list-style: none;
+      padding: 0;
+   }
+   .simple-pagination2 a {
+      text-decoration: none;
+      padding: 12px;
+      color: black;
+   }
+</style>
+</head>
+<body>
+   <div class="simple-pagination">
+      <a href="#">«</a>
+      <a href="#" class="active-link">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+      <a href="#">»</a>
+   </div>
+
+   <div class="simple-pagination2">
+    <a href="#">«</a>
+    <a href="#">A</a>
+    <a href="#">B</a>
+    <a href="#">C</a>
+    <a href="#">D</a>
+    <a href="#">E</a>
+    <a href="#">»</a>
+ </div>
+</body>
+</html>

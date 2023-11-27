@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+   .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+   }
+   .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 2s;
+   }
+   .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+   }
+</style>
+</head>
+<body style="text-align:center;">
+<h2>Fade-in Tooltip Example</h2> <br/> <br/>
+<div class="tooltip">
+   Hover over this text
+   <span class="tooltiptext">This is a fade-in tooltip</span>
+</div>
+</body>
+</html>
